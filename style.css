@@ -1290,6 +1290,10 @@ html::-webkit-scrollbar {
         background-position: 80% 50%;    
     }
 
+    .skills-image {
+        display: none;
+    }
+
     .dropdown-nav-links-wrapper {
         flex: 0;
         gap: 4rem;
