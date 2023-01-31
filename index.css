@@ -1266,6 +1266,10 @@ html::-webkit-scrollbar {
         width: 17rem;
         max-width: 8.1%;
     }
+    
+    .switch-off-wrapper, .switch-on-wrapper {
+        margin-bottom: 15rem;
+    }
 
     .right-column {
         width: 17rem;
