@@ -492,15 +492,13 @@ html::-webkit-scrollbar {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-left: 1px solid #fff;
     min-width: 100%; 
     min-height: 0vh;
+    max-height: 0vh;
     right: 0;
     top: 0;
     margin-top: -100rem;
     background-color: #2c2c2c;
-    box-shadow: -351px 367px 1px 370px rgba(67,67,67,0.54);
-    box-shadow: -300px -80px 280px #aaa;
     text-align: center;
     z-index: 3000;
 }
@@ -1208,37 +1206,37 @@ html::-webkit-scrollbar {
     .nav-icon-check {
         display: inline-block;
     }
-    .checkbox:checked ~ .dropdown-nav-container {
+    .checkbox:checked ~ header nav .dropdown-nav-container {
         margin-top: 0;
         transition: all .1s;
         transition: min-height .6s;
         min-height: 100vh;
     }
 
-    .checkbox:checked ~ .dropdown-nav-container .dropdown-nav-about {
+    .checkbox:checked ~ header nav .dropdown-nav-container .dropdown-nav-about {
         opacity: 100%;
         transition: all .4s;
         transform: translateY(0rem);
     }
 
-    .checkbox:checked ~ .dropdown-nav-container .dropdown-nav-skills {
+    .checkbox:checked ~ header nav .dropdown-nav-container .dropdown-nav-skills {
         opacity: 100%;
         transition: all 1s;
         transform: translateY(0rem);
     }
 
-    .checkbox:checked ~ .dropdown-nav-container .dropdown-nav-projects {
+    .checkbox:checked ~ header nav .dropdown-nav-container .dropdown-nav-projects {
         opacity: 100%;
         transition: all 1.6s;
         transform: translateY(0rem);
     }
 
-    .checkbox:checked ~ .dropdown-nav-container .dropdown-nav-contact {
+    .checkbox:checked ~ header nav .dropdown-nav-container .dropdown-nav-contact {
         opacity: 100%;
         transition: all 2.2s;
         transform: translateY(0rem);
     }
-    
+
     /* This is for mobile so that when the dropdown menu is displayed you can't scroll */
     .checkbox:checked ~ main {
         display: none;
@@ -1248,6 +1246,7 @@ html::-webkit-scrollbar {
         display: none;
     }
     /* End */
+
 
     html {
         -ms-overflow-style: none; 
