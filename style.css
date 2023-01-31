@@ -1262,6 +1262,21 @@ html::-webkit-scrollbar {
 
 
 @media (max-width: 450px) {
+    .landing-page-skills-box-1 {
+        width: 20rem;
+        min-height: 21rem;
+        max-width: 90%;
+    }
+    
+    .dropdown-nav-links-wrapper {
+        flex: 0;
+        gap: 4rem;
+    }
+
+    .nav-icons-container {
+        margin-bottom: 14rem;
+    }
+    
     .left-column {
         width: 17rem;
         max-width: 8.1%;
