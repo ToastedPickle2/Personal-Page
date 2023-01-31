@@ -1238,6 +1238,16 @@ html::-webkit-scrollbar {
         transition: all 2.2s;
         transform: translateY(0rem);
     }
+    
+    /* This is for mobile so that when the dropdown menu is displayed you can't scroll */
+    .checkbox:checked ~ main {
+        display: none;
+    }
+
+    .checkbox:checked ~ footer {
+        display: none;
+    }
+    /* End */
 
     html {
         -ms-overflow-style: none; 
