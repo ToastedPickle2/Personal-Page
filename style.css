@@ -1280,7 +1280,8 @@ html::-webkit-scrollbar {
     .left-column {
         width: 17rem;
         max-width: 8.1%;
-        height: calc(var(--real100vh) - 21vh);
+        height: calc(var(--real100vh) - 36vh);
+        justify-content: center;
     }
 
     .right-column {
