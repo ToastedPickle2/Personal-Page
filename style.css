@@ -1159,7 +1159,13 @@ html::-webkit-scrollbar {
     .landing-page-main-text {
         padding-right: 2rem;
         padding-left: 0rem;
-        padding-block-end: 4rem;
+        padding-left: 1rem;
+        padding-block-end: 0rem;
+        background-color: #8D99AE;
+    }
+
+    .main-contact-me-button {
+        margin-block-start: 4rem;
     }
 
     .box-2 {
