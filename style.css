@@ -599,11 +599,9 @@ html::-webkit-scrollbar {
 }
 
 .dropdown-nav-icons-wrapper {
-    /* background-color: blue; */
     display: flex;
     align-items: flex-end;
     flex: .5;
-
 }
 
 .nav-icons-container {
@@ -614,6 +612,7 @@ html::-webkit-scrollbar {
     justify-content: center;
     gap: 2rem;
     padding-top: 2rem;
+    margin-bottom: 14rem;
 }
 
 
@@ -1160,13 +1159,11 @@ html::-webkit-scrollbar {
         padding-right: 2rem;
         padding-left: 0rem;
         padding-left: 1rem;
-        padding-block-end: 0rem;
-        background-color: #8D99AE;
-        border-radius: 10px;
+        padding-block-end: 4rem;
     }
 
     .main-contact-me-button {
-        margin-block-start: 4rem;
+        margin-blocdk-start: 4rem;
     }
 
     .box-2 {
@@ -1267,11 +1264,28 @@ html::-webkit-scrollbar {
 
 }
 
+
 @media (max-width: 450px) {
+    .landing-page-main-text {
+        padding-left: 1rem;
+        padding-block-end: 0rem;
+        background-color: #8D99AE;
+        border-radius: 10px;
+    }
+
+    .main-contact-me-button {
+        margin-block-start: 4rem;
+    }
+
+    .landing-page-header {
+        background-color: #022F46;
+    }
+
     .landing-page-skills-box-1 {
         width: 20rem;
         min-height: 21rem;
         max-width: 90%;
+        background-color: red;
     }
 
     .dropdown-nav-links-wrapper {
