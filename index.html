@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/0246dfd44d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="PortfolioImages/profilepic8.png"> 
+    <link rel="shortcut icon" href="profilepic8.png"> 
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -18,13 +18,14 @@
     <span class="background-color"></span>
     <header>
         <nav>
+            <!-- <input type="checkbox" class="checkbox" id="click" hidden> -->
             <div class="nav-container">
-                <img src="PortfolioImages/8A-logo.png" alt="Navigation Alejandro Ochoa logo" class="nav-logo">
+                <a href="#landing-page" class="nav-logo-anchor"><img src="8A-logo.png" alt="Navigation logo, Alejandro Ochoa" class="nav-logo"></a>
                 <div class="nav-links-wrapper">
-                    <p><a href="#" class="anchor">About</a></p>
-                    <p><a href="#" class="anchor">Skills</a></p>
-                    <p><a href="#" class="anchor">Projects</a></p>
-                    <p><a href="#" class="anchor">Contact</a></p>
+                    <p><a href="#landing-page" class="anchor">About</a></p>
+                    <p><a href="#skills-page" class="anchor">Skills</a></p>
+                    <p><a href="#projects-page" class="anchor">Projects</a></p>
+                    <p><a href="#contact-page" class="anchor">Contact</a></p>
                     <label for="click" class="nav-icon-check">
                         <i class="fa-regular fa-bars nav-hamburger-icon"></i>
                     </label>
@@ -36,7 +37,7 @@
                     <i class="fa-regular fa-x dropdown-nav-x-icon"></i>
                 </label>
                 <div class="dropdown-nav-logo-wrapper">
-                    <img src="PortfolioImages/8A-circle.png" class="dropdown-nav-logo">
+                    <img src="8A-circle.png" class="dropdown-nav-logo">
                 </div>
 
                 <div class="dropdown-nav-links-wrapper">
@@ -51,7 +52,7 @@
                         <a href="https://github.com/ToastedPickle2" class="anchor"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/8aweb_designs/" class="anchor"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="anchor"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" class="anchor"><i class="fa-light fa-envelope"></i></a>
+                        <a href="mailto:aochoasa@ucsc.edu" class="anchor"><i class="fa-light fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -59,17 +60,22 @@
     </header>
     
     <main>
+         <!-- Landing Page -->
         <section>
-            <div class="container">
-                <div class="even-columns landing-page-grid">
+            <div class="container" id="landing-page">
+                <div class="even-columns">
                     <div class="box-1"> 
                         <h1 class="fs-primary | landing-page-header">Hi, I'm Alejandro!</h1>
                         <h2 class="fs-secondary | landing-page-sub-header">Front End Web Developer</h2>
-                        <p class="fs-text | landing-page-main-text">I'm a passionate web developer focused on creating simple, visually pleasing, and creative websites. I will do my best to turn any ideas you may have for your personal or business website into reality.</p>
+                        <div class="landing-page-main-text-wrapper">
+                            <p class="fs-text | landing-page-main-text">I'm a passionate web developer focused on creating simple, visually pleasing, and creative websites. I will do my best to turn any ideas you may have for your personal or business website into reality.</p>
+                        </div>
                         <div class="contact-button-pattern-wrapper">
-                            <button class="main-contact-me-button" role="button">
-                                Contact Me
-                            </button>
+                            <a href="#contact-page">
+                                <button class="main-contact-me-button" role="button">
+                                    Contact Me
+                                </button>
+                            </a>
                             <span class="contact-background-square-pattern-1"></span>
                             <span class="contact-background-square-pattern-2"></span>
                         </div>
@@ -78,7 +84,7 @@
                     <input type="checkbox" class="skills-checkbox" id="click2" hidden>
                     <div class="box-2">
                         <div class="headshot-pattern-wrapper">
-                            <img src="PortfolioImages/mainprofilepic.png" class="landing-page-headshot">
+                            <img src="mainprofilepic.png" class="landing-page-headshot">
                             <span class="background-square-pattern"></span>
                         </div>
                         <label for="click2" class="skills-check">
@@ -86,7 +92,7 @@
                         </label>
                         <div class="landing-page-skills-box-wrapper">
                             <div class="landing-page-skills-box-1">
-                                <img src="PortfolioImages/skillsimage.jpeg" alt="" class="skills-image">
+                                <img src="skillsimage.jpeg" alt="" class="skills-image">
                             </div>
                             <div class="landing-page-skills-box-2">
                                 <ul>
@@ -109,7 +115,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="left-column">
                 <div class="switch-off-wrapper">
                     <label for="click3" class="light-switch-off-check">
@@ -140,7 +146,7 @@
                             <i class="fa-brands fa-linkedin social-icons"></i>
                         </a>
 
-                        <a href="#" class="anchor | social-links">
+                        <a href="mailto:aochoasa@ucsc.edu" class="anchor | social-links">
                             <i class="fa-light fa-envelope social-icons"></i>
                         </a>
                     </div>
@@ -184,9 +190,105 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="container-2"></div>
-        </section> -->
+        <!-- Second Page -->
+        <section>
+            <div class="container | second-page-container" id="skills-page">
+                <div class="even-columns | second-page-columns">
+                    <div class="box-1 | second-page-box-1">
+                        <h1 class="fs-secondary | second-page-header">Experience</h1>
+                        <div class="second-page-text-wrapper">
+                            <p class="fs-text | second-page-text">I discovered Front End Web Development in August 2022, just 7 months ago, and it quickly became a passion. I especially enjoy the creative freedom it allows while designing visually appealing and professional websites.  I also enjoy the technical aspect of web development and I'm always striving to create responsive websites that are up to date with the latest trends and standard practices. </p>
+                            <p class="fs-text | second-page-text">Although I don't have professional experience,  I have completed many projects with an aim to  improve my skills and  challenge myself.  I have made websites ranging from <span><a href="#" class="anchor | second-page-text-links">blogs</a></span>, to <span><a href="#" class="anchor | second-page-text-links">personal business</a></span>, to <span><a href="#" class="anchor | second-page-text-links">stores</a></span>, to <span><a href="#" class="anchor | second-page-text-links">my own version</a></span> of Apple's website.</p>
+                            <p class="fs-text | second-page-text">You can view my work below and you can always <span><a href="mailto:aochoasa@ucsc.edu" class="anchor | second-page-text-links">contact me</a></span> if you have any questions or requests. </p>
+                        </div>
+                    </div>
+
+                    <div class="box-2 | second-page-box-2">
+                        <img src="vector-image-3.jpg" class="second-page-vector-images second-page-vector-2">
+                        <img src="portfolio-vector-image.png" alt="" class="second-page-vector-images second-page-vector-1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Page -->
+        <section>
+            <div class="container | third-page-container" id="projects-page">
+                <div class="third-page-header-wrapper">
+                    <h1 class="fs-secondary third-page-header">Projects</h1>
+                </div>
+
+                <div class="even-columns | third-page-columns">
+                    <div class="box-1 | third-page-box-1">
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="landing-page-example-4.jpg" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-1.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="landing-page-example-3.jpg" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-2.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="PersonalWebsiteLandingPage.jpg" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-3.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="Fenix-Website.png" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-8.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+                    </div>
+
+                    <div class="box-2 | third-page-box-2">
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="SampleAppleWebsiteLandingPage.jpg" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-4.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+                        
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="Art-Website.png" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-5.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+                        
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="Music-Website.png" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-6.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+
+                        <div class="project-images-wrapper">
+                            <a href="#" class="flex"><img src="personal-website-example.jpg" alt="" class="projects-images | normal-image"></a>
+                            <a href="#" class="flex"><img src="glitch-image-7.jpg" alt="" class="projects-images | glitch-image"></a>
+                            <p class="projects-view-text"><a href="#" class="anchor">View Project</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+     <!-- Footer -->
+     <footer>
+        <div class="container | footer-container" id="contact-page">
+            <div class="footer-box-1">
+                <div class="footer-contact-text-wrapper">
+                    <h1 class="fs-secondary">Contact Me</h1>
+                    <p class="fs-text">I'm currently looking for job and project opportunities. If you would like to discuss any of these with me or just want to reach out don't be afraid to send me an email :)</p>
+                </div>
+                <div class="typeform" data-tf-widget="olMmDV7B" data-tf-opacity="100" data-tf-chat data-tf-iframe-props="title=My typeform" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+            <div class="footer-box-2">
+                <p>Designed by</p>
+                <p>Alejandro Ochoa &copy; 2023</p>
+            </div>
+    </footer>
 </body>
 </html>
