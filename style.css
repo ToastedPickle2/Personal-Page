@@ -1048,7 +1048,9 @@ svg {
     width: 60rem;
     max-width: 90%;
     height: 30rem;
+    height: 50rem;
     margin-block-start: 25rem;
+    margin-block-start: 15rem;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -1073,6 +1075,7 @@ svg {
     color: #252038;
     z-index: 10000;
     font-family: var(--ff-secondary);
+    border-top: 2px solid #fff;
 }
 
 .footer-contact-text-wrapper {
@@ -1730,6 +1733,19 @@ svg {
     .third-page-columns {
         max-width: 90%;
         align-self: center;
+    }
+
+    .footer-contact-text-wrapper p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer-box-1 {
+        border-bottom: 2px solid #fff;
+    }
+
+    .footer-box-2 {
+        border-top: 2px solid #fff;
     }
 }
 
